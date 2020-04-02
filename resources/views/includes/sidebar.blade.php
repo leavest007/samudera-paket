@@ -266,7 +266,27 @@
                     </ul>
                 </li>
                 
-                
+                <li class="nav-item">
+                    <a href="#">
+                        <i class="fa fa-print"></i>
+                        <span class="menu-title" data-i18n="Print">Print</span>
+                    </a>
+                    <ul class="menu-content">
+                        <li>
+                            <a href="#">
+                                <i class="feather icon-circle"></i>
+                                <span class="menu-item" data-i18n="SuratTagihan">Surat Tagihan</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="feather icon-circle"></i>
+                                <span class="menu-item" data-i18n="SuratPelanggan">Surat Pelanggan</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
             </ul>
         </div>
     </div>
