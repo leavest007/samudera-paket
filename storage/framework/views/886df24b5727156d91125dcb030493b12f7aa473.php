@@ -1,0 +1,3 @@
+<link rel="apple-touch-icon" href="<?php echo e(url('../../../backend/app-assets/images/ico/apple-icon-120.png')); ?>">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo e(url('../../../backend/app-assets/images/ico/favicon.ico')); ?>">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet"><?php /**PATH C:\xampp\htdocs\samuderapaket\resources\views/includes/header.blade.php ENDPATH**/ ?>
