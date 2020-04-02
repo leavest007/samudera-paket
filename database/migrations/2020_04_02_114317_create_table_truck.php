@@ -14,7 +14,11 @@ class CreateTableTruck extends Migration
     public function up()
     {
         Schema::create('truck', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('no_polisi');
+            $table->string('nama_truck');
+            $table->string('grup');
+            $table->integer('cabang');
             $table->timestamps();
         });
     }

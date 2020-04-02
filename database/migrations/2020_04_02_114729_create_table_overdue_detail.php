@@ -14,7 +14,10 @@ class CreateTableOverdueDetail extends Migration
     public function up()
     {
         Schema::create('overduedetail', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('stt');
+            $table->dateTime('tanggal');
+            $table->integer('nominal');
             $table->timestamps();
         });
     }

@@ -14,7 +14,12 @@ class CreateTableRetur extends Migration
     public function up()
     {
         Schema::create('retur', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('kode_retur');
+            $table->integer('cabang');
+            $table->string('stt');
+            $table->dateTime('tanggal_kirim')->nullable();
+            $table->dateTime('tanggal_terima')->nullable();
             $table->timestamps();
         });
     }

@@ -14,7 +14,12 @@ class CreateTableLansir extends Migration
     public function up()
     {
         Schema::create('lansir', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->integer('antrian_kendaraan');
+            $table->string('kode_lansir');
+            $table->integer('checker');
+            $table->dateTime('waktu_berangkat');
+            $table->dateTime('waktu_sampai');
             $table->timestamps();
         });
     }

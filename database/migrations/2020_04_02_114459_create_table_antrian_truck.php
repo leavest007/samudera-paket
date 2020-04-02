@@ -14,7 +14,13 @@ class CreateTableAntrianTruck extends Migration
     public function up()
     {
         Schema::create('antriantruck', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->integer('truck');
+            $table->string('nama_supir');
+            $table->string('no_telpon_supir');
+            $table->string('kernet');
+            $table->string('no_telpon_kernet');
+            $table->integer('cabang');
             $table->timestamps();
         });
     }

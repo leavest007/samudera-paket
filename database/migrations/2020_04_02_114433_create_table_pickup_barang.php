@@ -14,7 +14,17 @@ class CreateTablePickupBarang extends Migration
     public function up()
     {
         Schema::create('pickupbarang', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('no_pickup');
+            $table->string('kode_pickup');
+            $table->string('pengirim');
+            $table->string('stt');
+            $table->integer('kendaraan');
+            $table->string('waktu_berangkat');
+            $table->string('waktu_pulang');
+            $table->date('tanggal');
+            $table->integer('cabang');
+            $table->integer('user');
             $table->timestamps();
         });
     }

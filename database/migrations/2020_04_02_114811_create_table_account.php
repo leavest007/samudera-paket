@@ -14,7 +14,10 @@ class CreateTableAccount extends Migration
     public function up()
     {
         Schema::create('account', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('kode_account');
+            $table->string('nama_account');
+            $table->integer('cabang');
             $table->timestamps();
         });
     }

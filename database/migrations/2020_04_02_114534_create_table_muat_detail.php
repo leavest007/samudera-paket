@@ -14,7 +14,11 @@ class CreateTableMuatDetail extends Migration
     public function up()
     {
         Schema::create('muatdetail', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('stt');
+            $table->integer('id_muat');
+            $table->integer('status');
+            $table->text('keterangan')->nullable();
             $table->timestamps();
         });
     }

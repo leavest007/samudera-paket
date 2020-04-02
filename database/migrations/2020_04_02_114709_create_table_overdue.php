@@ -14,7 +14,12 @@ class CreateTableOverdue extends Migration
     public function up()
     {
         Schema::create('overdue', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('stt');
+            $table->integer('cabang');
+            $table->string('nama_pelanggan');
+            $table->integer('nominal_awal');
+            $table->integer('nominal');
             $table->timestamps();
         });
     }

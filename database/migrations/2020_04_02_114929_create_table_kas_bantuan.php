@@ -14,7 +14,15 @@ class CreateTableKasBantuan extends Migration
     public function up()
     {
         Schema::create('kasbantuan', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->dateTime('tanggal')->nullable();
+            $table->string('kode_account')->nullable();
+            $table->string('nama_account')->nullable();
+            $table->integer('kantor')->nullable();
+            $table->text('keterangan')->nullable();
+            $table->text('keterangan_tambahan')->nullable();
+            $table->string('debet')->nullable();
+            $table->string('kredit')->nullable();
             $table->timestamps();
         });
     }

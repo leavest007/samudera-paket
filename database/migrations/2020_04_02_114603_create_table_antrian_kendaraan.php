@@ -14,7 +14,10 @@ class CreateTableAntrianKendaraan extends Migration
     public function up()
     {
         Schema::create('antriankendaraan', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->integer('kendaraan');
+            $table->integer('nama_supir');
+            $table->integer('nama_kernet');
             $table->timestamps();
         });
     }

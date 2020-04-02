@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTablePenagihan extends Migration
+class CreateTableTransit extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreateTablePenagihan extends Migration
      */
     public function up()
     {
-        Schema::create('penagihan', function (Blueprint $table) {
+        Schema::create('transit', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('stt');
-            $table->text('keterangan');
-            $table->integer('status');
+            $table->integer('penjualan');
+            $table->text('transit');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ class CreateTablePenagihan extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('penagihan');
+        Schema::dropIfExists('transit');
     }
 }
